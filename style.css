@@ -454,17 +454,41 @@ footer img {
     }
 
     .containerFaleConoscoDiv {
-        padding: 3em;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2em;
     }
 
-    .containerFaleConoscoDiv img {
+    .containerFaleConoscoDiv2 {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .FaleConoscoIMG {
         width: 50%;
-        padding-bottom: 1em;
+    }
+
+    .FaleConoscoIMG img {
+        height: 30em;
+        width: auto;
+    }
+
+    .FaleConoscoTexto {
+        width: 50%;
+    }
+
+    .containerFaleConoscoDiv {
+        padding: 3em;
     }
 
     .containerFaleConoscoDiv p {
         padding-bottom: 1em;
-        width: 75%;
+        width: 100%;
+    }
+
+    .containerFaleConoscoDiv h2 {
+        font-size: 2.5em;
     }
 
     .QualificaçãoDivTexto img {
@@ -478,28 +502,35 @@ footer img {
 
     .containerQualificaçãoDiv {
         display: flex;
+        flex-direction: row;
         justify-content: center;
-        align-items: center;
-        padding: 2em;
+        padding: 1em 5em;
     }
 
     .containerQualificaçãoDiv2 {
         display: flex;
         justify-content: center;
-        flex-direction: column;
         align-items: center;
     }
 
     .containerQualificaçãoDiv2 img {
-        width: 10em;
-        padding: 1em 0 2em;
+        width: 15em;
+        padding: 1em;
+    }
+
+    .QualificaçãoDivTexto h3 {
+        font-size: 1.8em;
     }
 
     .QualificaçãoDivTexto {
         justify-content: center;
         padding: 0;
         line-height: 1.5em;
-        width: 80%;
+        width: 100%;
+    }
+
+    .containerServiçosDiv {
+        height: 240vh;
     }
 
     .containerServiçosDivPC {
@@ -512,11 +543,13 @@ footer img {
         height: 90vh;
     }
 
-    .div2, .div3, .div4 {
+    .div2,
+    .div3,
+    .div4 {
         align-items: center;
         padding: 1em;
         border: 1px solid black;
-        width: 50%;
+        width: 30%;
         margin: 1em;
         background-color: white;
         border-radius: 2em;
@@ -526,20 +559,81 @@ footer img {
         padding: 0;
         line-height: 0.8em;
         width: 80%;
+        height: 15em;
         font-size: 1.5em;
     }
 
+    .mais {
+        height: 10em;
+        padding-bottom: 5em;
+    }
+    
     .containerServiçosDiv2 h3 {
         padding: 1em;
     }
 
     .containerServiçosDiv2 img {
-        width: 30em;
+        width: 90%;
     }
 
+    .containerVeterinarioDiv {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .containerVeterinarioDiv2 {
+        margin: 2em;
+    }
     .containerVeterinarioDiv img {
         width: 50%;
         padding-bottom: 3em;
+    }
+
+    .containerCremaçãoDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .containerCremaçãoDiv img {
+        width: 40%;
+    }
+
+    .containerCremaçãoDiv p {
+        font-size: 1em;
+    }
+
+    .containerCremaçãoDiv h2 {
+        font-size: 1.5em;
+        padding: 0;
+    }
+
+    .containerLocalizaçãoDiv h3 {
+        font-size: 2em;
+        padding: 2em 0;
+    }
+
+    .containerLocalizaçãoDiv p,
+    a {
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+
+    .containerLocalizaçãoDiv img {
+        width: 50%;
+        padding: 3em 0;
+    }
+
+    .mapa {
+        width: 55%;
+    }
+
+    .pcdiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }
