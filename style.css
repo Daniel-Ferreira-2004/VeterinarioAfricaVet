@@ -121,21 +121,23 @@ header nav div {
     padding: 2em;
 }
 
-.containerQualificaçãoDiv2 {
+.qualificaçãoDivBox {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 1em 1em 5em 1em;
+    align-items: center;
 }
 
-.containerQualificaçãoDiv2 img {
-    width: 100%;
+.qualificaçãoDivBox img {
+    width: 8em;
+    padding-bottom: 2em;
 }
 
 .QualificaçãoDivTexto {
     text-align: center;
     padding: 0 2em;
     line-height: 1.5em;
-    width: 70%;
     color: var(--p-color);
 }
 
@@ -153,7 +155,7 @@ header nav div {
     align-items: center;
 }
 
-.containerServiçosDiv2 {
+.ServiçosDivBox {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,17 +173,17 @@ header nav div {
     font-weight: 900;
 }
 
-.containerServiçosDiv2 h3 {
+.ServiçosDivBox h3 {
     font-size: 1.5em;
     padding: 1em;
 }
 
-.containerServiçosDiv2 img {
+.ServiçosDivBox img {
     width: 100%;
     padding: 1em 0;
 }
 
-.containerServiçosDiv2 p {
+.ServiçosDivBox p {
     padding: 1em 2em;
     color: var(--p-color);
     line-height: 1em;
@@ -189,7 +191,7 @@ header nav div {
     text-align: center;
 }
 
-.mais h3 {
+.ServiçosDivBoxMais h3 {
     color: #FF990C;
     font-size: 1.5em;
     font-weight: 900;
@@ -258,11 +260,11 @@ header nav div {
     padding: 1em;
 }
 
-.containerLocalizaçãoDiv1 {
+.localizaçãoDivBoxTexto {
     text-align: center;
 }
 
-.containerLocalizaçãoDiv2 {
+.localizaçãoDivBoxTexto2 {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -387,7 +389,7 @@ footer img {
         line-height: 1em;
     }
 
-    .containerServiçosDiv2 h3 {
+    .ServiçosDivBox h3 {
         font-size: 2em;
         line-height: 1em;
     }
@@ -459,10 +461,9 @@ footer img {
         padding: 2em;
     }
 
-    .containerFaleConoscoDiv2 {
+    .FaleConoscoBox {
         display: flex;
         justify-content: space-evenly;
-
     }
 
     .FaleConoscoIMG {
@@ -491,11 +492,6 @@ footer img {
         font-size: 2.5em;
     }
 
-    .QualificaçãoDivTexto img {
-        font-size: 2em;
-        line-height: 1em;
-    }
-
     .btn3 {
         margin: 2em 0 1em;
     }
@@ -507,19 +503,17 @@ footer img {
         padding: 1em 5em;
     }
 
-    .containerQualificaçãoDiv2 {
+    .qualificaçãoDivBox {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
+        padding: 3em;
     }
 
-    .containerQualificaçãoDiv2 img {
-        width: 15em;
+    .qualificaçãoDivBox img {
+        width: 10em;
         padding: 1em;
-    }
-
-    .QualificaçãoDivTexto h3 {
-        font-size: 1.8em;
     }
 
     .QualificaçãoDivTexto {
@@ -527,6 +521,11 @@ footer img {
         padding: 0;
         line-height: 1.5em;
         width: 100%;
+        padding-top: 1em;
+    }
+
+    .QualificaçãoDivTexto h3 {
+        font-size: 1.8em;
     }
 
     .containerServiçosDiv {
@@ -539,13 +538,7 @@ footer img {
         padding: 2em;
     }
 
-    .containerServiçosDiv2 {
-        height: 90vh;
-    }
-
-    .div2,
-    .div3,
-    .div4 {
+    .ServiçosDivBox {
         align-items: center;
         padding: 1em;
         border: 1px solid black;
@@ -553,9 +546,10 @@ footer img {
         margin: 1em;
         background-color: white;
         border-radius: 2em;
+        height: 90vh;
     }
 
-    .containerServiçosDiv2 p {
+    .ServiçosDivBox p {
         padding: 0;
         line-height: 0.8em;
         width: 80%;
@@ -563,16 +557,20 @@ footer img {
         font-size: 1.5em;
     }
 
-    .mais {
+    .ServiçosDivBoxMais {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: 10em;
         padding-bottom: 5em;
     }
-    
-    .containerServiçosDiv2 h3 {
+
+    .ServiçosDivBox h3 {
         padding: 1em;
     }
 
-    .containerServiçosDiv2 img {
+    .ServiçosDivBox img {
         width: 90%;
     }
 
@@ -582,9 +580,15 @@ footer img {
         flex-direction: row;
     }
 
-    .containerVeterinarioDiv2 {
-        margin: 2em;
+    .veterinarioDivBox {
+        margin: 3em;
+        font-size: 1.5em;
     }
+
+    .veterinarioDivBox h2 {
+        font-size: 2em;
+    }
+
     .containerVeterinarioDiv img {
         width: 50%;
         padding-bottom: 3em;
@@ -615,27 +619,41 @@ footer img {
         padding: 2em 0;
     }
 
+    .localizaçãoDivBoxTexto2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
     .containerLocalizaçãoDiv p,
     a {
         font-size: 1.5em;
         line-height: 2em;
     }
 
-    .containerLocalizaçãoDiv img {
-        width: 50%;
-        padding: 3em 0;
-    }
-
-    .mapa {
-        width: 55%;
-    }
-
-    .pcdiv {
+    .localizaçãoDivBoxIMG {
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 30em;
+        border: 1px solid black;
     }
 
+    .localizaçãoDivBoxIMG img {
+        width: 45%;
+        height: auto;
+    }
+
+    .mapa {
+        padding-left: 1em;
+        width: 45%;
+        padding-top: 1.5em;
+    }
+
+    .footerIMG  img{
+        height: 10em;
+        padding: 2em;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
