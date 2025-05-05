@@ -173,7 +173,18 @@ header nav div {
     font-weight: 900;
 }
 
-.ServiçosDivBox h3 {
+.FaleConoscoTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.serviçosDivBoxTexto{
+    text-align: center;
+}
+
+.serviçosDivBoxTexto h3 {
     font-size: 1.5em;
     padding: 1em;
 }
@@ -181,9 +192,11 @@ header nav div {
 .ServiçosDivBox img {
     width: 100%;
     padding: 1em 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
-.ServiçosDivBox p {
+.serviçosDivBoxTexto p {
     padding: 1em 2em;
     color: var(--p-color);
     line-height: 1em;
@@ -191,10 +204,19 @@ header nav div {
     text-align: center;
 }
 
+
+.ServiçosDivBoxMais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+}
 .ServiçosDivBoxMais h3 {
     color: #FF990C;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 900;
+    padding-bottom: 1em;
 }
 
 .containerVeterinarioDiv {
@@ -330,6 +352,7 @@ footer img {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
+
     .nav-img {
         width: 15em;
     }
@@ -355,6 +378,13 @@ footer img {
         border-radius: 5px;
     }
 
+    .containerFaleConoscoDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .containerFaleConoscoDiv img {
         width: 80%;
         padding-bottom: 1em;
@@ -364,6 +394,12 @@ footer img {
     .containerFaleConoscoDiv p {
         color: var(--p-color);
         padding-bottom: 1em;
+    }
+
+    .FaleConoscoTexto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     p {
@@ -529,7 +565,7 @@ footer img {
     }
 
     .containerServiçosDiv {
-        height: 240vh;
+        height: 400vh;
     }
 
     .containerServiçosDivPC {
@@ -539,6 +575,8 @@ footer img {
     }
 
     .ServiçosDivBox {
+        display: flex;
+        flex-direction: column;
         align-items: center;
         padding: 1em;
         border: 1px solid black;
@@ -546,15 +584,28 @@ footer img {
         margin: 1em;
         background-color: white;
         border-radius: 2em;
-        height: 90vh;
+        height: 70em
     }
 
-    .ServiçosDivBox p {
+    .serviçosDivBoxTexto {
+        text-align: center;
         padding: 0;
         line-height: 0.8em;
-        width: 80%;
-        height: 15em;
+        max-width: 15em;
+        height: 50em;
         font-size: 1.5em;
+    }
+
+    .serviçosDivBoxTexto p {
+        font-size: 1em;
+    }
+
+    .serviçosDivBoxTexto h3 {
+        padding: 0.5em;
+    }
+
+    .ServiçosDivBox img {
+        width: 90%;
     }
 
     .ServiçosDivBoxMais {
@@ -565,15 +616,6 @@ footer img {
         height: 10em;
         padding-bottom: 5em;
     }
-
-    .ServiçosDivBox h3 {
-        padding: 1em;
-    }
-
-    .ServiçosDivBox img {
-        width: 90%;
-    }
-
     .containerVeterinarioDiv {
         display: flex;
         justify-content: space-around;
@@ -592,6 +634,7 @@ footer img {
     .containerVeterinarioDiv img {
         width: 50%;
         padding-bottom: 3em;
+        padding-right: 1em;
     }
 
     .containerCremaçãoDiv {
@@ -622,13 +665,15 @@ footer img {
     .localizaçãoDivBoxTexto2 {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding: 1em;
     }
 
     .containerLocalizaçãoDiv p,
     a {
-        font-size: 1.5em;
+        font-size: 1.2em;
         line-height: 2em;
+        padding-left: 1em;
     }
 
     .localizaçãoDivBoxIMG {
@@ -636,7 +681,6 @@ footer img {
         justify-content: center;
         align-items: center;
         height: 30em;
-        border: 1px solid black;
     }
 
     .localizaçãoDivBoxIMG img {
@@ -657,4 +701,14 @@ footer img {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .ServiçosDivBox {
+        height: 55em;
+        padding-bottom: 2em;
+    }
+
+    .containerServiçosDiv {
+        height: 150em;
+    }
+
+}
