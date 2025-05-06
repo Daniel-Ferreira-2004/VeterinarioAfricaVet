@@ -79,6 +79,7 @@ header nav div {
     font-size: 1em;
     border: none;
     background-color: white;
+    color: black;
 }
 
 .btn:hover {
