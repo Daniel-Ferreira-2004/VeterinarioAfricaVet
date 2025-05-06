@@ -52,7 +52,7 @@ header nav div {
     display: flex;
     flex-direction: column;
     padding: 35% 2em 0 2em;
-    background: linear-gradient(180deg, #ffd64f, transparent 100%), url(img/BGVeterinaria.jpg); 
+    background: linear-gradient(180deg, #ffd64fbb 50%, transparent 90%), url(img/BGVeterinaria.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
